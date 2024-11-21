@@ -1,0 +1,9 @@
+#User function Template for python3
+
+def validate(str):
+    pat=r'^[a-z]+[\W_]+[0-9]+$'
+    match = re.search(pat, str)
+    if(match):
+        return True
+    else:
+        return False
